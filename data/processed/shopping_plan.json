@@ -1,0 +1,62 @@
+[
+  {
+    "product": "nöm Buttermilch Natur 1%",
+    "store": "billa",
+    "price": 1.05
+  },
+  {
+    "product": "Lays Chips Sour Cream Onion",
+    "store": "billa",
+    "price": 2.49
+  },
+  {
+    "product": "Leibniz Keks 'N\" Cream Choco",
+    "store": "billa",
+    "price": 2.89
+  },
+  {
+    "product": "Ja! Natürlich Butterkäse",
+    "store": "billa",
+    "price": 3.49
+  },
+  {
+    "product": "Ben & Jerry's Peanut Butter Cup",
+    "store": "billa",
+    "price": 6.99
+  },
+  {
+    "product": "Milka Oreo",
+    "store": "billa",
+    "price": 1.99
+  },
+  {
+    "product": "Pringles Sour Cream",
+    "store": "billa",
+    "price": 2.39
+  },
+  {
+    "product": "Rama mit Butternote Meersalz",
+    "store": "billa",
+    "price": 1.99
+  },
+  {
+    "product": "Ölz Buttertoast",
+    "store": "billa",
+    "price": 2.99
+  },
+  {
+    "product": "MILFINA Cottage Cheese Natur fettreduziert 250g",
+    "store": "hofer",
+    "price": 1.29
+  },
+  {
+    "product": "MILSANI Milk Snack Milk&Honey 6x28g",
+    "store": "hofer",
+    "price": 1.49
+  },
+  {
+    "product": "Loacker Tortina Peanut Butter",
+    "store": "spar",
+    "price": 3.99
+  }
+]

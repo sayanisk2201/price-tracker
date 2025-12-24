@@ -1,0 +1,33 @@
+{
+  "results": [
+    {
+      "product": "Butter 250g",
+      "store": "hofer",
+      "price": 1.69,
+      "name": "MILSANI Teebutter 250g"
+    },
+    {
+      "product": "Banane",
+      "store": "spar",
+      "price": 1.79,
+      "name": "SPAR Natur*pur Bio-Buttermilch Orange-Banane"
+    },
+    {
+      "product": "Ben & Jerry's Sundae Choco-lotta Cheesecake",
+      "store": "billa",
+      "price": 6.99,
+      "name": "Ben & Jerry's Sundae Choco-lotta Cheesecake"
+    },
+    {
+      "product": "Milka Choco Brownie",
+      "store": "billa",
+      "price": 2.99,
+      "name": "Milka Choco Brownie"
+    }
+  ],
+  "totals": {
+    "billa": 9.98,
+    "spar": 1.79,
+    "hofer": 1.69
+  }
+}
