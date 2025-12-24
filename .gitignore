@@ -1,0 +1,5 @@
+# Raw data (too large, regenerated automatically)
+data/raw/
+
+# Node dependencies
+node_modules/
