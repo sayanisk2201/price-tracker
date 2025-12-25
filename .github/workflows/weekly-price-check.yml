@@ -2,8 +2,8 @@ name: Weekly Grocery Price Check
 
 on:
   schedule:
-    - cron: "0 6 * * 5"  # Every Friday at 06:00 UTC
-  workflow_dispatch:     # Allow manual runs
+    - cron: "0 6 * * 5"
+  workflow_dispatch:
 
 jobs:
   run-price-tracker:
@@ -19,16 +19,18 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          cd heissepreise/price-tracker
+          npm install
 
-    - name: Run automation
-  run: |
-    cd heissepreise/price-tracker
-    node scripts/runAll.js
-
+      - name: Run automation
+        run: |
+          cd heissepreise/price-tracker
+          node scripts/runAll.js
 
       - name: Commit updated results
         run: |
+          cd heissepreise/price-tracker
           git config user.name "price-bot"
           git config user.email "price-bot@users.noreply.github.com"
           git add data/processed
