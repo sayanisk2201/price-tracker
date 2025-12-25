@@ -21,8 +21,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run automation
-        run: node scripts/runAll.js
+    - name: Run automation
+  run: |
+    cd heissepreise/price-tracker
+    node scripts/runAll.js
+
 
       - name: Commit updated results
         run: |
