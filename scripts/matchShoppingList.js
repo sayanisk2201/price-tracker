@@ -48,7 +48,7 @@ function matchShoppingList() {
 }
 
 // 👇 this is the KEY LINE
-module.exports = function matchShoppingList() {
+module.exports = function () {
   return {
     cheapestItems,
     totalsPerStore
