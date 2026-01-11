@@ -1,13 +1,28 @@
-- name: Install dependencies
-  run: npm install
+name: Weekly Grocery Price Check
 
-- name: Run automation
-  run: node scripts/runAll.js
+on:
+  schedule:
+    - cron: "0 8 * * 5"   # every Friday at 08:00 UTC
+  workflow_dispatch:
 
-- name: Commit updated results
-  run: |
-    git config user.name "price-bot"
-    git config user.email "price-bot@users.noreply.github.com"
-    git add data/processed
-    git commit -m "Weekly price update" || echo "No changes to commit"
-    git push
+jobs:
+  run-price-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run grocery automation
+        run: node scripts/runAll.js
+
+      - name: Show weekly plan
+        run: cat data/processed/weekly_plan.txt
